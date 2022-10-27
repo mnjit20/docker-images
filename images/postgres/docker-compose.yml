@@ -1,4 +1,4 @@
-version: '1.0'
+version: '3.1'
 
 services:
   postgres:
@@ -10,7 +10,7 @@ services:
       PGDATA: /data/postgres
     volumes:
        - postgres:/data/postgres
-    ports:
+    ports:  
       - "5432:5432"
     networks:
       - postgres
